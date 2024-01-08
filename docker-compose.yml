@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  app-service:
+    build:
+      context: .
+  mongo-db:
+    image: mongo
+    container_name: mongo-db
+    ports:
+      - "27017:27017"
